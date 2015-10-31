@@ -10,26 +10,16 @@ window.onload = function init()
 
 	// Specify position and color of the vertices
 	
-	// 1(d) Positionsanpassung passiert hier
-	var vertices = new Float32Array([	-0.5, 1, 
-										0, -1, 
-										0.5, 1]);
+	// 2 Entfernungsanpassung der Punkte passiert hier
+	var vertices = new Float32Array([	-0.025, 0, 
+										0.025, 0]);
 	/*
-	var vertices = new Float32Array([	-1, -1, 
-										0, 1, 
-										1, -1]);
+	var vertices = new Float32Array([	-0.5, -0.5, 
+										0, 0.5]);
 	*/
-
-	// 1(c) Farbanpassung passiert hier
-	var colors = new Float32Array([ 0, 0, 1, 1, 
-									0, 0, 1, 1,
-									0, 0, 1, 1,]);
-	/*
 	var colors = new Float32Array([ 1, 0, 0, 1, 
-									1, 1, 0, 1,
-									0, 1, 0, 1,]);
-	*/
-
+									0, 0, 1, 1]);
+	
 	// Configure viewport
 
 	gl.viewport(0,0,canvas.width,canvas.height);
@@ -60,11 +50,12 @@ window.onload = function init()
 	var vPosition = gl.getAttribLocation(program, "vPosition");
 	gl.vertexAttribPointer(vPosition, 2, gl.FLOAT, false, 0, 0);
 	gl.enableVertexAttribArray(vPosition);
+	
 	render();
 };
 
 function render()
 {
 	gl.clear(gl.COLOR_BUFFER_BIT);
-	gl.drawArrays(gl.TRIANGLES, 0, 3);
+	gl.drawArrays(gl.POINTS, 0, 2);
 }

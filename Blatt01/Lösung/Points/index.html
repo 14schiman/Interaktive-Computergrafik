@@ -12,6 +12,8 @@
 			void main()
 			{
 				fColor = vColor;
+				// 2 Durchmesseranpassung der Punkte passiert hier 
+				gl_PointSize = 6.0;
 				gl_Position = vPosition;
 			}
 		</script>
@@ -29,13 +31,11 @@
 		</script>
 		<script type="text/javascript" src="../Common/initShaders.js">
 		</script>
-		<script type="text/javascript" src="triangle.js">
+		<script type="text/javascript" src="points.js">
 		</script>
 	</head>
 	<body>
-		<!-- 1(b) Textanpassung passiert hier -->
-		<h1>Ein Dreieck</h1>
-		<!--<h1>Lorem Ipsum</h1>-->
+		<h1>Lorem Ipsum</h1>
 
 		<canvas id="gl-canvas" width="512" height="512">
 			If you see this, your browser doesn't support WebGL.
