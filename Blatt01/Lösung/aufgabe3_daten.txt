@@ -4,4 +4,4 @@ Teilnehmer	1	2	3	4	5	6	Durchschn.
 Armin		3.00m	3.20m	2.95m	3.05m	3.10m	3.25m	3.09m		
 Tim
 Felix		2.95m	3.05m	2.90m	3.15m	3.15m	3.20m	3.07m
-Dennis
+Dennis		2.95m	3.15m	2.90m	3.15m	3.10m	3.20m	3.08m
